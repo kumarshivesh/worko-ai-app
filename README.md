@@ -2,6 +2,8 @@
 
 This is a RESTful API using Node.js with an MVC architecture, implementing CRUD operations, JWT-based authentication, and input validation with Express and Joi. Achieved over 90% test coverage using Jest for comprehensive unit testing.
 
+[![Coverage Report](https://i.ibb.co/j59Zz4n/coverage-report.png)]
+
 ## Prerequisites
 
 - Node.js 
