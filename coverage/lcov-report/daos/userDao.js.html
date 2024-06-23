@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -89,54 +89,54 @@
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const User = require('../models/userModel');
 &nbsp;
 class UserDao {
-<span class="fstat-no" title="function not covered" >  as</span>ync getAllUsers() {
-<span class="cstat-no" title="statement not covered" >    return User.find({ isDeleted: false });</span>
+  async getAllUsers() {
+    return User.find({ isDeleted: false });
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  as</span>ync getUserById(userId) {
-<span class="cstat-no" title="statement not covered" >    return User.findOne({ _id: userId, isDeleted: false });</span>
+  async getUserById(userId) {
+    return User.findOne({ _id: userId, isDeleted: false });
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  as</span>ync createUser(user) {
-    const newUser = <span class="cstat-no" title="statement not covered" >new User(user);</span>
-<span class="cstat-no" title="statement not covered" >    return newUser.save();</span>
+  async createUser(user) {
+    const newUser = new User(user);
+    return newUser.save();
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  as</span>ync updateUser(userId, user) {
-<span class="cstat-no" title="statement not covered" >    return User.findByIdAndUpdate(userId, user, { new: true });</span>
+  async updateUser(userId, user) {
+    return User.findByIdAndUpdate(userId, user, { new: true });
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  as</span>ync softDeleteUser(userId) {
-<span class="cstat-no" title="statement not covered" >    return User.findByIdAndUpdate(userId, { isDeleted: true }, { new: true });</span>
+  async softDeleteUser(userId) {
+    return User.findByIdAndUpdate(userId, { isDeleted: true }, { new: true });
   }
 }
 &nbsp;
@@ -148,7 +148,7 @@ module.exports = new UserDao();
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-06-23T10:06:40.310Z
+                at 2024-06-23T10:26:16.270Z
             </div>
         <script src="../prettify.js"></script>
         <script>
