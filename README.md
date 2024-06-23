@@ -52,9 +52,9 @@ npm test
 
 ## App Demo
 
-<!-- Refer this YouTube video for App demo
+Refer this YouTube video for App demo
 
-[![Postman Lite Demo](https://i.ibb.co/rMm5c5Y/postman-lite-thumbnail.png)](https://youtu.be/lRdpPOqZ8Ec?si=UC8d1gZaz8HgsovM) -->
+[![RESTful API Demo](https://i.ibb.co/Hz0QyXn/restful-api-thumbnail.png)](https://youtu.be/mfW2NWYO0R4)
 
 Your server is running and successfully connected to MongoDB. Here are the next steps you can take to test your API and ensure everything is working correctly:
 
@@ -71,7 +71,7 @@ node scripts/generateToken.js
 3. Enter the URL: Type http://localhost:3000/worko/user into the URL field. 
 4. Add the `Authorization` header with the `Bearer token`.
 5. Select `Body` as `none`.
-6. Send the Request: Click the "Send Request" button.
+6. Send the Request: Click the "Send" button.
 7. View the Response: Verify the response.
 
 ### 2. Making a GET Request (user details)
@@ -81,7 +81,7 @@ node scripts/generateToken.js
 3. Enter the URL: Type http://localhost:3000/worko/user/:userId into the URL field. Replace `:userId` with an actual user ID. 
 4. Add the `Authorization` header with the `Bearer token`.
 5. Select `Body` as `none`.
-6. Send the Request: Click the "Send Request" button.
+6. Send the Request: Click the "Send" button.
 7. View the Response: Verify the response.
 
 ### 3. Making a POST Request
@@ -100,7 +100,7 @@ node scripts/generateToken.js
   "zipCode": "000003"
 }
 ```
-6. Send the Request: Click the "Send Request" button.
+6. Send the Request: Click the "Send" button.
 7. View the Response: Verify the response.
 
 ### 4. Making a PUT Request
@@ -119,7 +119,7 @@ node scripts/generateToken.js
   "zipCode": "000003"
 }
 ```
-6. Send the Request: Click the "Send Request" button.
+6. Send the Request: Click the "Send" button.
 7. View the Response: Verify the response.
 
 ### 5. Making a PATCH Request
@@ -134,7 +134,7 @@ node scripts/generateToken.js
   "age": 35
 }
 ```
-6. Send the Request: Click the "Send Request" button.
+6. Send the Request: Click the "Send" button.
 7. View the Response: Verify the response.
 
 ### 6. Making a DELETE Request (user details)
@@ -144,7 +144,7 @@ node scripts/generateToken.js
 3. Enter the URL: Type http://localhost:3000/worko/user/:userId into the URL field. Replace `:userId` with an actual user ID. 
 4. Add the `Authorization` header with the `Bearer token`.
 5. Select `Body` as `none`.
-6. Send the Request: Click the "Send Request" button.
+6. Send the Request: Click the "Send" button.
 7. View the Response: Verify the response.
 
 
