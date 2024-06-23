@@ -6,6 +6,7 @@ class UserDto {
     this.age = user.age;
     this.city = user.city;
     this.zipCode = user.zipCode;
+    this.isDeleted = user.isDeleted; // Include isDeleted property
   }
 }
 

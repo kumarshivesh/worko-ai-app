@@ -9,7 +9,7 @@ class UserService {
 
   async getUserById(userId) {
     const user = await userDao.getUserById(userId);
-    if (!user) throw new Error('User not found');
+    if (!user) return null; // Change from throwing an error to returning null
     return new UserDto(user);
   }
 

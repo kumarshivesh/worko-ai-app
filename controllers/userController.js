@@ -21,6 +21,9 @@ exports.listUsers = async (req, res) => {
 exports.getUser = async (req, res) => {
   try {
     const user = await userService.getUserById(req.params.userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
     res.json(user);
   } catch (err) {
     res.status(404).json({ error: err.message });
